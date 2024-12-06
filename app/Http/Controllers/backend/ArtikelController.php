@@ -19,8 +19,8 @@ class ArtikelController extends Controller
 {
     public function index()
     {
-        //$artikel = Artikel::OrderBy('title', 'asc')->get();
-        $artikel = Artikel::with(['kategoris', 'tags', 'author'])->get();
+
+        $artikel = Artikel::all();
 
         $author = Author::all();
         $kategori = Kategori::all();

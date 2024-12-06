@@ -25,6 +25,12 @@ License: You must have a valid license purchased only from themeforest(the above
             Dashboard
         @elseif (request()->routeIs('admin.kategori.all'))
             Kategori
+        @elseif (request()->routeIs('admin.artikel.all'))
+            Artikel
+        @elseif (request()->routeIs('admin.tag.all'))
+            Tag
+        @elseif (request()->routeIs('admin.author.all'))
+         Author
         @endif - CMS
     </title>
     <!-- BEGIN: CSS Assets-->

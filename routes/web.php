@@ -4,6 +4,7 @@ use App\Http\Controllers\backend\ArtikelController;
 use App\Http\Controllers\backend\AuthorController;
 use App\Http\Controllers\backend\KategoriController;
 use App\Http\Controllers\backend\TagController;
+use App\Http\Controllers\frontend\ArtikelController as FrontendArtikelController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,19 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// frontend //
+
+
+Route::get('/', [FrontendArtikelController::class, 'index'])->name('home');
+Route::get('/kategori', [FrontendArtikelController::class, 'kategori'])->name('kategori');
+Route::get('/artikel/{id}', [FrontendArtikelController::class, 'detail'])->name('detail.kategori');
+
+
+
+
+
+
+// CMS ADMIN//
 
 Route::prefix('admin')->middleware(['auth'])->name('admin.')->group(function () {
     Route::get('kategori', [KategoriController::class, 'index'])->name('kategori.all');

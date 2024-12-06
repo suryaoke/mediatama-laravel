@@ -14,12 +14,7 @@ class Tag extends Model
 
     ];
 
-    // Relasi artikel  pivot (many-to-many)
-    // public function artikels()
-    // {
-    //     return $this->belongsToMany(Artikel::class, 'artikel_tag', 'tag_id', 'artikel_id');
-    // }
-
+  
     public function artikels()
     {
         return $this->belongsToMany(Artikel::class, 'artikel_tags');

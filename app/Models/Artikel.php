@@ -16,22 +16,7 @@ class Artikel extends Model
         'author_id',
     ];
 
-    //     public function author()
-    //     {
-    //         return $this->belongsTo(Author::class);
-    //     }
-
-    //     // Relasi  kategori pivot ` (many-to-many)
-    //     public function kategoris()
-    //     {
-    //         return $this->belongsToMany(Kategori::class, 'artikel_kategoris', 'artikel_id', 'kategori_id');
-    //     }
-
-    //    // Relasi tag pivot ` (many-to-many)
-    //     public function tags()
-    //     {
-    //         return $this->belongsToMany(Tag::class, 'artikel_tags', 'artikel_id', 'tag_id');
-    //     }
+    
 
     public function author()
     {
