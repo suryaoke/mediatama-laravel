@@ -1,3 +1,20 @@
+Autentikasi menggunakan starter kit Laravel Breeze.
+
+1. Landing Page 
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-landing.png)
+
+3. Admin CMS
+
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-login.png)
+
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-profile.png)
+
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-dashboard.png)
+
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-artikel.png)
+
+![alt text](https://github.com/suryaoke/mediatama-laravel/blob/main/m-addartikel.png)
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
