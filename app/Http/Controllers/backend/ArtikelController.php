@@ -20,7 +20,7 @@ class ArtikelController extends Controller
     public function index()
     {
 
-        $artikel = Artikel::all();
+        $artikel = Artikel::with(['author', 'kategoris', 'tags'])->get();
 
         $author = Author::all();
         $kategori = Kategori::all();
